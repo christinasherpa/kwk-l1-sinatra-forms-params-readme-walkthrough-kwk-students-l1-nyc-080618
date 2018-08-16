@@ -7,7 +7,15 @@ class App < Sinatra::Base
   end
   
   post '/food' do
-    "My name is #{params[:name]} and I love #{params[:favorite_food]}"
+    erb :food
+  end
+  
+  get'/office_form' do
+    erb :office_form
+  end
+  
+  post '/office' do
+    erb :office
   end
   
   # Add your post route and action below
